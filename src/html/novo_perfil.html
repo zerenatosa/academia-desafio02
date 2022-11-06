@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<main>
+    <header style="
+    bottom: 0;
+    background-color:#C0C0C0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;">
+        <div class="container">
+            <h1 class = "titulo">Academia - Desafio 02 - v3 - classifica clientes</h1>
+        </div>
+    </header>
+    <h2 style="width: 50vw; margin-left : 25vw; margin-top: 40px;"> Cadastro de novo tipo de investimento</h2>
+    <form style="width: 50vw; margin-left : 25vw;">
+        <div class="form-group">
+          <label for="input-tipo-investimento">informe o tipo de investimento</label>
+          <input type="text" class="form-control col-xs-4" id="input-tipo-investimento" placeholder="digite aqui">
+        </div>
+        <div class="form-group" style="margin-top: 20px;">
+          <label for="select-perfil-cliente">selecione o cliente relacionado</label>
+          <select class="form-control w-auto p-1" id="select-perfil-cliente">
+            <option>nihil</option>
+            <option>private</option>
+            <option>exclusivo</option>
+            <option>carteirao</option>
+          </select>
+        </div>
+        <br>
+        <button class="btn btn-danger" type="submit" onclick="pegaValor(event)">gravar</button>
+      </form>
+
+
+
+      <footer style="position: absolute;
+      bottom: 0;
+      background-color: #C0C0C0;
+      color: #FFF;
+      width: 100%;
+      height: 100px;    
+      text-align: center;
+      line-height: 100px;">
+        <div style="width: 50vw; margin-left : 25vw;">
+            <a class="btn btn-danger" href="/index.html" role="button">voltar</a>
+        </div>
+      </footer>
+      
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+<script src="/src/js/novo_perfil.js"></script>
+<script src="/src/js/baseDeDados.js"></script>
+</body>
+</html>

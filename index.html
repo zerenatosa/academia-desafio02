@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - v3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header style="
+    bottom: 0;
+    background-color:#C0C0C0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;">
+        <div class="container">
+            <h1 class = "titulo">Academia - Desafio 02 - v3 - classifica clientes</h1>
+        </div>
+    </header>
+    
+    <main>
+
+    <section style="width: 50vw; margin-left : 25vw; margin-top: 40px;">
+        <h3>Selecione o tipo de cliente e veja opções</h3>
+       <select name="opcoes" id = "opcoes" onchange="opcaoSelecionada(this)">
+        <option value="nihil">nihil</option>
+            <option value="private">private</option>
+            <option value="exclusivo">exclusivo</option>
+            <option value="carteirao">carteirao</option>
+        </select>
+    </section>
+
+    <section style="width: 50vw; margin-left : 25vw; margin-top: 40px;">
+        <h3>Deseja cadastrar um novo perfil de investimento?</h3>
+        <a class="btn btn-danger" href="/src/html/novo_perfil.html" role="button">Cadastrar</a>    
+    </section>
+
+    <footer style="position: absolute;
+    bottom: 0;
+    background-color:#C0C0C0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;">
+      <div style="width: 50vw; margin-left : 25vw;">
+          <p>Autor: zerenatosa</p>
+      </div>
+    </footer>
+    
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/investimentos.js"></script>
+    <script src="./src/js/baseDeDados.js"></script>
+</body>
+</html>
